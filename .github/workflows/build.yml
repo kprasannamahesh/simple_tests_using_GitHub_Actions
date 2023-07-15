@@ -1,7 +1,9 @@
+name: Node App Testing
 on: push
 jobs:
     first-job:
         runs-on: ubuntu-latest
+        container: node:16
         steps:
             - run: node --version
             - run: npm --version
