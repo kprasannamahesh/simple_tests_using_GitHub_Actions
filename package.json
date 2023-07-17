@@ -1,0 +1,14 @@
+{
+  "name": "simple_tests_using_github_actions",
+  "version": "1.0.0",
+  "description": "A simple node file which use expressjs to run a simple webserver and includes a unit test for the the web server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mahesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
