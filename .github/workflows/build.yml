@@ -1,12 +1,15 @@
 name: Node App Testing
 on: push
 jobs:
-    first-job:
-        runs-on: ubuntu-latest
-        container: node:16
-        steps:
-            - run: node --version
-            - run: npm --version
-            - run: ls -la
-            - run: npm install
-            - run: npx jest
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
