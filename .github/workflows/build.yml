@@ -8,4 +8,5 @@ jobs:
             - run: node --version
             - run: npm --version
             - run: ls -la
-            - run: npm install && node src/index.js
+            - run: npm install
+            - run: npx jest
